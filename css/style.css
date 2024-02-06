@@ -3,6 +3,10 @@ html {
   overflow-x: hidden;
   height: 100%;
 }
+@font-face {
+  font-family: holligate;
+  src: url('../fonts/holligate.ttf');
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -455,8 +459,8 @@ body.light hr.separator {
 }
 
 .home .bg {
-  background-image: url(../img/mani5.jpeg);
-  background-size: cover;
+  /* background-image: url(../img/mani5.jpeg); */
+  /* background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   height: calc(100vh - 60px);
@@ -465,9 +469,35 @@ body.light hr.separator {
   left: 30px;
   top: 30px;
   box-shadow: 0 0 7px rgba(0,0,0,.9);
-      background-position-y: -160px;
+      background-position-y: -160px; */
 }
 
+.index-title h1{
+  font-size: 80px;
+  color: #fff !important;
+  font-family: holligate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  transform: rotate(-30deg) translate(80px, 10px);
+}
+.index-title h1 span{
+
+}
+.index-title h1 span.dotss{
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  font-size: 50px;
+  font-weight: normal;
+}
+.index-title h1 span.dotss b{
+  position: absolute;
+  right: 35px;
+  bottom: -10px;
+}
 .home .container-home {
   display: flex;
   align-items: center;
